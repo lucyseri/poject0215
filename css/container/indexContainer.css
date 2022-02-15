@@ -1,0 +1,139 @@
+:root{
+  --baseHeight: 500px;
+}
+
+/* container */
+.container{
+  width: 100%;
+  height: auto;
+}
+.container .inner-container .index .sections .section.sec1{
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con{
+  width: 100%;
+  max-width: 1400px;
+  /* flex: 0 1 1400px; */
+  height: var(--baseHeight);
+  
+  position: relative;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery ul{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(1){
+  background: url(/img/gallery1.jpg) no-repeat 50% / cover;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(2){
+  background: url(/img/gallery2.jpg) no-repeat 50% / cover;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(3){
+  background: url(/img/gallery3.jpg) no-repeat 50% / cover;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(4){
+  background: url(/img/gallery4.jpg) no-repeat 50% / cover;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(5){
+  background: url(/img/gallery5.jpg) no-repeat 50% / cover;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .bcon{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .bcon span.arrow{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .center-btn{
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .center-btn .items{
+  flex: 0 1 200px;
+  height: auto;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .center-btn .items ul{
+  display: flex;
+  justify-content: space-between;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .center-btn .items ul>li{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid orange;
+  box-sizing: border-box;
+}
+.on{
+  background-color: orange;
+}
+
+.container .inner-container .index .sections .section.sec2{
+  padding: 0 10px 40px;
+  display: flex;
+  justify-content: center;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con{
+  flex: 0 1 1200px;
+}
+.container .inner-container .index .sections .section.sec2 ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, minmax(250px, auto));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 10px;
+}
+.container .inner-container .index .sections .section.sec2 ul>li{
+  transition: all 0.3s ease-in-out;
+}
+.container .inner-container .index .sections .section.sec2 ul>li img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media only screen and (max-width:800px){
+  .container .inner-container .index .sections .section.sec2 ul{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width:640px){
+  .container .inner-container .index .sections .section.sec2 ul{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
