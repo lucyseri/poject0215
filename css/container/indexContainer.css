@@ -1,6 +1,4 @@
-:root{
-  --baseHeight: 500px;
-}
+
 
 /* container */
 .container{
@@ -16,43 +14,46 @@
   width: 100%;
   max-width: 1400px;
   /* flex: 0 1 1400px; */
-  height: var(--baseHeight);
+  height: 500px;
   
   position: relative;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery{
   width: 100%;
-  height: inherit;
+  height: 500px;
   position: absolute;
   top: 0;
   left: 0;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery ul{
   width: 100%;
-  height: inherit;
+  height: 500px;
   position: absolute;
+  left: 0;
+  top: 0;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li{
   width: 100%;
-  height: inherit;
+  height: 500px;
   position: absolute;
   left: 0;
   top: 0;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(1){
-  background: url(/img/gallery1.jpg) no-repeat 50% / cover;
+  background: url(../../img/gallery1.jpg) no-repeat 50% / cover;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(2){
-  background: url(/img/gallery2.jpg) no-repeat 50% / cover;
+  background: url(../../img/gallery2.jpg) no-repeat 50% / cover;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(3){
-  background: url(/img/gallery3.jpg) no-repeat 50% / cover;
+  background: url(../../img/gallery3.jpg) no-repeat 50% / cover;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(4){
-  background: url(/img/gallery4.jpg) no-repeat 50% / cover;
+  background: url(../../img/gallery4.jpg) no-repeat 50% / cover;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .gallery ul>li:nth-child(5){
-  background: url(/img/gallery5.jpg) no-repeat 50% / cover;
+  background: url(../../img/gallery5.jpg) no-repeat 50% / cover;
+  z-index: 5;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .bcon{
   width: 100%;
@@ -65,6 +66,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  z-index: 6;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .bcon span.arrow{
   display: block;
@@ -82,6 +84,7 @@
   bottom: 0;
   display: flex;
   justify-content: center;
+  z-index: 6;
 }
 .container .inner-container .index .sections .section.sec1 .sec-con .center-btn .items{
   flex: 0 1 200px;
